@@ -8,6 +8,7 @@ html {
 
 body {
   color: #333;
+  margin: 0;
   font-family: Georgia, serif;
 }
 
@@ -21,17 +22,25 @@ input {
 h1,
 label,
 input[type="submit"],
-.output {
+pre {
   display: block;
   margin: 2rem;
 }
 
-div.output {
+div {
   margin: 0;
+  width: 100%;
+}
+div:after {
+  clear: both;
+  content: '';
+  display: table;
 }
 
 img {
+  display: block;
+  float: left;
   padding: 0 2rem 2rem;
-  width: 25%;
+  width: 33.33%;
 }
 
