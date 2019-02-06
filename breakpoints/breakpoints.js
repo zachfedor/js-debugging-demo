@@ -1,9 +1,15 @@
 "use strict";
 
+/**
+ * Adds two numbers
+ */
 const add = (x, y) => {
   return x + y;
 };
 
+/**
+ * On form submit, add two numbers and print result
+ */
 const calculate = (event) => {
   event.preventDefault();
 
@@ -13,6 +19,9 @@ const calculate = (event) => {
   output.textContent = `The answer is:  ${sum}`;
 };
 
+/**
+ * Sets up form event listener
+ */
 document.addEventListener('DOMContentLoaded', () => {
   const calculator = document.querySelector('.calculator');
 
