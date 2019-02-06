@@ -6,7 +6,14 @@ html {
   font-size: 20px;
 }
 
+body {
+  color: #333;
+  font-family: Georgia, serif;
+}
+
 input {
+  color: #333;
+  font-family: Georgia, serif;
   font-size: 1rem;
   padding: 0.1rem 0.5rem;
 }
@@ -15,7 +22,16 @@ h1,
 label,
 input[type="submit"],
 .output {
-  color: #333;
   display: block;
   margin: 2rem;
 }
+
+div.output {
+  margin: 0;
+}
+
+img {
+  padding: 0 2rem 2rem;
+  width: 25%;
+}
+
