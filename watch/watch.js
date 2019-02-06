@@ -36,6 +36,8 @@ const buildGrid = (event) => {
         grid += isEven(y) ? ' ' : '#';
       }
     }
+
+    grid += "\n"; 
   } 
 
   const output = document.querySelector('.output');

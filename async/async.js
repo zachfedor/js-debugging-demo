@@ -18,9 +18,9 @@ const fetchUser = (username) => {
   const apiEndpoint = 'https://api.github.com';
   const url = `${apiEndpoint}/users/${username}`;
   
-  fetch(url).then(resp => resp.json()).then(data => data.avatar.toString()).then(addImage);
+  fetch(url).then(resp => resp.json()).then(data => data.avatar_url.toString()).then(addImage);
   // in case the above line breaks because of rate limiting, see note at bottom
-  // Promise.resolve(backupJSON).then(data => data.avatar.toString()).then(addImage);
+  // Promise.resolve(backupJSON).then(data => data.avatar_url.toString()).then(addImage);
 };
 
 /**

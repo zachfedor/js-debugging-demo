@@ -4,7 +4,7 @@
  * Adds two numbers
  */
 const add = (x, y) => {
-  return x + y;
+  return parseInt(x) + parseInt(y);
 };
 
 /**
